@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Хроindexники изолированного города</title>
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../css/Sstyles.css">
+            <style>
+            .banner {
+                background: center/cover;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                text-shadow: 4px 4px 10px black;
+                padding: 20px;
+                border-bottom: 5px solid #2b3b4b;
+                color: #c0c0c0;
+              }
+              .banner h1 {
+                color: #b0b0b0;
+                font-size: 32px;
+                margin-bottom: 20px;
+              }
+              .banner p {
+                font-size: 20px;
+                margin: 10px 0;
+                max-width: 800px;
+              }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <nav class="menu">
+                    <a href="index.html" class="active">Главная</a>
+                    <a href="history.html">История</a>
+                    <a href="factions.html">Фракции</a>
+                    <a href="characters2.html">Персонажи</a>
+                    <a href="chronicles2.html">Хроники</a>
+                </nav>
+                <img src="../images/logo3_2.svg" alt="Логотип">
+            </div>
+            
+            <div class="banner" style="background-image: url(../images/banner.jpg);">
+                <h1>Хроники Изолированного Города</h1>
+                <p>Этот мир создан для тех, кто ищет сложные и мрачные истории. Город, отрезанный от внешнего мира, живёт по своим законам. Здесь тайны прошлого сплетаются с интригами настоящего, а древние силы пробуждаются из забвения.</p>
+                <p>Сможешь ли ты найти своё место в этом жестоком мире или станешь лишь тенью в истории?..</p>
+            </div>
+            
+            <div class="map-container" onclick="toggleMap()">
+                <div class="map-header">
+                    <span>Показать карту</span>
+                    <span class="map-toggle">x</span>
+                </div>
+                <div class="map-content">
+                    <iframe src="https://watabou.github.io/city-generator/?size=73&seed=1807665902&citadel=1&urban_castle=0&plaza=1&temple=1&walls=1&shantytown=0&coast=1&river=1&greens=0&gates=-1&sea=1.5"></iframe>
+                </div>
+            </div>
+        
+            <div class="content">
+                <h1>События города</h1>
+                
+                <div class="card">
+                    <h3>❖ Кровавый дождь</h3>
+                    <p>На рассвете над городом прошёл дождь алого цвета. Магистры утверждают, что это редкое природное явление, но жители нижних кварталов шепчутся о проклятии.</p>
+                    <p class="quote">"Капли оставляли на коже жгучие следы, а в воздухе стоял запах меди и чего-то... древнего."</p>
+                </div>
+                
+                <div class="card">
+                    <h3>❖ Тайные собрания</h3>
+                    <p>В старом квартале участились ночные собрания неизвестного культа. Стража пока не вмешивается, наблюдая за развитием событий.</p>
+                    <p class="quote">"Они носили маски с символами, которых нет ни в одном известном языке."</p>
+                </div>
+                
+                <div class="card">
+                    <h3>❖ Исчезновения в архиве</h3>
+                    <p>Трое писцов пропали без вести во время ночного дежурства в городском архиве. На месте обнаружены странные символы, нарисованные чернилами.</p>
+                    <p class="quote">Особое внимание вызывает тот факт, что все пропавшие работали с документами, относящимися к Первому Осаждению.</p>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2025 Хроники изолированного города</p>
+                <p>GitHub: <a href="https://github.com/MalionkinZahar/KyrProject">Malionkin Zahar</p>
+            </div>
+            <script src="../jscript/script.js"></script>
+    </body>
+</html>

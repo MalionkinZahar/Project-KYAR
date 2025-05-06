@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи - Хроники Изолированного Города</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Sstyles.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="history.html">История</a>
+            <a href="factions.html">Фракции</a>
+            <a href="characters2.html" class="active">Персонажи</a>
+            <a href="chronicles2.html">Хроники</a>
+        </nav>
+        <img src="../images/logo3_2.svg" alt="Логотип">
+    </div>
+
+    <div class="content">
+        <h1>Персонажи</h1>
+
+        <h2>Игровые персонажи</h2>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Райнер "Тень" Вельд</h3>
+                <p>Опытный наёмник, мастер скрытности.</p>
+                <p><b>Раса:</b> Человек | <b>Класс:</b> Разбойник</p>
+                <p><b>Сила:</b> 12 | <b>Ловкость:</b> 18 | <b>Интеллект:</b> 14</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/1.png');"></div>
+            <div class="character-details">
+                <p><b>Навыки:</b> Воровство, скрытность, работа с ядами.</p>
+                <p><b>Прошлое:</b> Бывший телохранитель, преданный своим хозяином.</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Астрид фон Брейн</h3>
+                <p>Колдунья, изучающая запретную магию.</p>
+                <p><b>Раса:</b> Высший эльф | <b>Класс:</b> Маг</p>
+                <p><b>Сила:</b> 8 | <b>Ловкость:</b> 14 | <b>Интеллект:</b> 20</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/2.png');"></div>
+            <div class="character-details">
+                <p><b>Навыки:</b> Иллюзии, некромантия, алхимия.</p>
+                <p><b>Прошлое:</b> Бежала из Академии магов после обвинений в ереси.</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Дрейк Сильвер</h3>
+                <p>Авантюрист, скрывающий свои истинные мотивы.</p>
+                <p><b>Раса:</b> Полуэльф | <b>Класс:</b> Следопыт</p>
+                <p><b>Сила:</b> 10 | <b>Ловкость:</b> 16 | <b>Интеллект:</b> 13</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/3.png');"></div>
+            <div class="character-details">
+                <p><b>Навыки:</b> Выживание, меткость, дипломатия.</p>
+                <p><b>Прошлое:</b> Работал на контрабандистов, но теперь ищет новый путь.</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Элейн Хавьер</h3>
+                <p>Жрица, стремящаяся изгнать зло из города.</p>
+                <p><b>Раса:</b> Дварф | <b>Класс:</b> Паладин</p>
+                <p><b>Сила:</b> 14 | <b>Ловкость:</b> 12 | <b>Интеллект:</b> 16</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/4.png');"></div>
+            <div class="character-details">
+                <p><b>Навыки:</b> Исцеление, экзорцизм, владение мечом.</p>
+                <p><b>Прошлое:</b> Потеряла веру после трагедии, но пытается обрести её заново.</p>
+            </div>
+        </div>
+
+        <h2>Важные персонажи</h2>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Лорд Ингвар Рутгард</h3>
+                <p>Верховный судья города, сторонник жесткого порядка.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/5.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> Имеет идентичного двойника, который появляется в разных концах города одновременно</p>
+                <p><b>Слабость:</b> Панически боится кошек после нападения оборотня в детстве</p>
+                <p><b>Интересный факт:</b> Его стальной меч "Судия" сделан из метеоритного железа и светится в присутствии лжи</p>
+                <p><b>Цель:</b> Уничтожить все следы магии в городе, включая собственного сына-мага</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Сестра Элиана</h3>
+                <p>Настоятельница приюта, скрывающая свою тайну.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/6.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> Каждую полную луну исчезает на 3 дня, возвращаясь с провалами в памяти</p>
+                <p><b>Способность:</b> Может лечить болезни одним прикосновением, но после этого тяжело болеет сама</p>
+                <p><b>Интересный факт:</b> В подвале приюта хранит коллекцию древних масок, которые шепчутся по ночам</p>
+                <p><b>Цель:</b> Найти способ остановить свое превращение в нечто ужасное</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Капитан Грегор</h3>
+                <p>Командир городской стражи, жёсткий, но справедливый.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/7.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> Искусственно поддерживает жизнь с помощью алхимических эликсиров</p>
+                <p><b>Особенность:</b> Его правая рука — механический протез с скрытым клинком</p>
+                <p><b>Интересный факт:</b> Ведет двойную игру, снабжая информацией как Совет, так и Теневую Гильдию</p>
+                <p><b>Цель:</b> Уничтожить культ Безымянного, который убил его семью</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Графиня Морн</h3>
+                <p>Таинственная аристократка с особыми знаниями.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/8.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> На самом деле ей 300 лет, она пережила 5 "смертей", перевоплощаясь в новых телах</p>
+                <p><b>Способность:</b> Читает мысли через зеркала и отражения</p>
+                <p><b>Интересный факт:</b> В её особняке все часы показывают разное время, а двери ведут в случайные комнаты</p>
+                <p><b>Цель:</b> Найти способ покинуть город, который для неё является ловушкой</p>
+            </div>
+        </div>
+
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Седрик "Ворон"</h3>
+                <p>Информатор, знающий обо всех секретах города.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/11.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> На самом деле слеп, но видит через глаза своих воронов</p>
+                <p><b>Особенность:</b> Никогда не лжёт, но и не говорит всей правды</p>
+                <p><b>Интересный факт:</b> Хранит коллекцию глаз своих врагов в специальных флаконах</p>
+                <p><b>Цель:</b> Собрать достаточно компромата, чтобы шантажировать всех правителей города</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleDetails(this)">
+            <div class="character-info">
+                <h3>Ренальд "Красный Клинок"</h3>
+                <p>Бывший генерал, ныне скрывающийся от правосудия.</p>
+            </div>
+            <div class="character-portrait" style="background-image: url('../images/9.png');"></div>
+            <div class="character-details">
+                <p><b>Тайна:</b> Именно он отдал приказ, приведший к резне в прибрежной провинции, после чего бежал из города</p>
+                <p><b>Особенность:</b> Всегда носит изрезанный боевой плащ — единственный трофей прошлой жизни</p>
+                <p><b>Интересный факт:</b> Вернулся в город за день до катастрофы, утверждая, что «видел её во сне»</p>
+                <p><b>Цель:</b> Найти источник катастрофы и доказать, что не всё было напрасно</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Хроники изолированного города</p>
+        <p>GitHub:</p>
+    </div>
+    <script src="../jscript/script.js"></script>
+</body>
+</html>

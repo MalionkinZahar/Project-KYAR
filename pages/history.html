@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>История города</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/Sstyles.css">
+</head>
+<body>
+  <div class="header">
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="history.html" class="active">История</a>
+      <a href="factions.html">Фракции</a>
+      <a href="characters2.html">Персонажи</a>
+      <a href="chronicles2.html">Хроники</a>
+    </nav>
+    <img src="../images/logo3_2.svg" alt="Логотип">
+  </div>
+
+  <div id="xmlContent"></div>
+
+  <div class="footer">
+    <p>&copy; 2025 Хроники изолированного города</p>
+    <p>GitHub:</p>
+</div>
+
+  <script>
+    function loadXMLDoc(filename) {
+      let xhttp = new XMLHttpRequest();
+      xhttp.open("GET", filename, false);
+      xhttp.send();
+      return xhttp.responseXML;
+    }
+
+    const xml = loadXMLDoc("history.xml");
+    const xsl = loadXMLDoc("history.xsl");
+
+    if (window.XSLTProcessor) {
+      const xsltProcessor = new XSLTProcessor();
+      xsltProcessor.importStylesheet(xsl);
+      const resultDocument = xsltProcessor.transformToFragment(xml, document);
+      document.getElementById("xmlContent").appendChild(resultDocument);
+    } else {
+      document.getElementById("xmlContent").innerHTML = "<p>Ваш браузер не поддерживает XSLT.</p>";
+    }
+  </script>
+</body>
+</html>

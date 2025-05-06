@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хроники - Хроники Изолированного Города</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Sstyles.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="history.html">История</a>
+            <a href="factions.html">Фракции</a>
+            <a href="characters2.html">Персонажи</a>
+            <a href="chronicles2.html" class="active">Хроники</a>
+        </nav>
+        <img src="../images/logo3_2.svg" alt="Логотип">
+    </div>
+
+    <div class="content">
+        <h1>Хроники Катастрофы</h1>
+
+        <div class="timeline-controls">
+            <button class="timeline-filter active" data-filter="all">Все записи</button>
+            <button class="timeline-filter" data-filter="official">Официальные</button>
+            <button class="timeline-filter" data-filter="secret">Тайные</button>
+            <button class="timeline-filter" data-filter="rumors">Слухи</button>
+        </div>
+
+        <p class="lore-intro">
+            <em>Из записей Ордена Архивариусов, обнаруженных в руинах Западной башни.  
+            Авторство приписывается бывшему главному писарю Совета,  
+            чье имя стёрто пеплом грядущих бедствий.</em>
+        </p>
+
+        <div class="chronicle-container">
+            <div class="chronicle-entry official" data-day="1">
+                <div class="chronicle-header">
+                    <h2>День 1 — Первые знамения</h2>
+                    <span class="chronicle-date">03.04.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Официальный бюллетень Совета</span>
+                </div>
+                <p>Зафиксированы необъяснимые колебания магических барьеров на западной границе.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Печать городского совета</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Сегодня утром магистры зафиксировали странные пульсации в защитных барьерах. Три торговых каравана с западных земель не прибыли в срок. На заседании Совета решено отправить разведгруппу для выяснения обстоятельств.</p>
+                    <div class="chronicle-comment">
+                        <em>Примечание архивариуса: Это были первые признаки Наступления.</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry secret" data-day="3">
+                <div class="chronicle-header">
+                    <h2>День 3 — Запертые врата</h2>
+                    <span class="chronicle-date">06.04.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Личный дневник капитана Грегора</span>
+                </div>
+                <p>По приказу Совета городские ворота закрыты на все замки.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Личная печать</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Разведгруппа не вернулась. Вчера вечером у Западных ворот появились трое беглецов с ферм. Их рассказы повергли Совет в ужас - они говорили о "движущейся тьме", поглощающей все на своем пути. Их глаза... словно они видели сам ад. Приказано удвоить караулы и никого не впускать.</p>
+                    <div class="chronicle-comment">
+                        <em>На полях дрожащим почерком: "Они уже среди нас?"</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry official" data-day="7">
+                <div class="chronicle-header">
+                    <h2>День 7 — Чрезвычайное положение</h2>
+                    <span class="chronicle-date">10.04.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Указ Верховного судьи</span>
+                </div>
+                <p>Введен комендантский час с заката до рассвета.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Гербовая печать</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>В Нижнем городе зафиксированы первые исчезновения. 12 человек пропали без вести за ночь. Введен комендантский час. Нарушители будут казнены на месте. Магистрам приказано усилить защитные барьеры. Начался сбор продовольствия в городских хранилищах.</p>
+                    <div class="chronicle-comment">
+                        <em>Приписка мелким почерком: "Говорят, в канализационных туннелях слышны шепоты"</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry rumors" data-day="12">
+                <div class="chronicle-header">
+                    <h2>День 12 — Пламя в архиве</h2>
+                    <span class="chronicle-date">15.04.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Анонимная записка</span>
+                </div>
+                <p>Городской архив уничтожен загадочным пожаром.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Без печати</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Пожар начался глубокой ночью и за три часа уничтожил все документы. Официально - несчастный случай, но я видел, как стражи выводили из здания троих человек в черных одеждах до того, как вспыхнул огонь. Говорят, сгорели особенно важные свитки о древней истории города. Почему именно они?</p>
+                    <div class="chronicle-comment">
+                        <em>Кровью на обороте: "Они знали. Они предупреждали"</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry secret" data-day="20">
+                <div class="chronicle-header">
+                    <h2>День 20 — Культ в тенях</h2>
+                    <span class="chronicle-date">22.04.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Донесение капитана стражи</span>
+                </div>
+                <p>Обнаружены следы деятельности запрещенного культа.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Секретно</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>В катакомбах под старым кварталом найдено место собраний. Стены исписаны непонятными символами, смесью древнего и чего-то... другого. На алтаре - останки 7 человек. Наиболее тревожное: все жертвы добровольно приняли яд. Они оставили записи: "Город уже мертв, мы лишь ускоряем неизбежное".</p>
+                    <div class="chronicle-comment">
+                        <em>Личная пометка: "Почему символы светятся в темноте?"</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry official" data-day="30">
+                <div class="chronicle-header">
+                    <h2>День 30 — Полная изоляция</h2>
+                    <span class="chronicle-date">01.05.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Приказ Совета</span>
+                </div>
+                <p>Все связи с внешним миром прерваны.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Большая печать</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Последний голубь вернулся с обожженными крыльями. Магические послания не проходят. 12 отправленных вестников не вернулись. На стенах города появился странный туман, который не рассеивается. Приказываю считать город в состоянии полной блокады. Рационирование продовольствия ужесточается.</p>
+                    <div class="chronicle-comment">
+                        <em>Кто-то добавил: "Мы одни. Совершенно одни."</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry official" data-day="45">
+                <div class="chronicle-header">
+                    <h2>День 45 — Власть железа</h2>
+                    <span class="chronicle-date">15.05.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Указ №147</span>
+                </div>
+                <p>Лорд Ингвар Рутгард объявлен верховным правителем.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Новая правительственная печать</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Совет распущен. Введено военное положение. Все ресурсы переходят под контроль стражи. За малейшие преступления - смерть. Особый приказ: все маги и алхимики должны явиться для регистрации. Говорят, в северном квартале начались самосожжения - люди предпочитают смерть новому порядку.</p>
+                    <div class="chronicle-comment">
+                        <em>Чужим почерком: "Он знает, что делает. Он видел Тьму лицом к лицу"</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chronicle-entry rumors" data-day="60">
+                <div class="chronicle-header">
+                    <h2>День 60 — Кровавый туман</h2>
+                    <span class="chronicle-date">30.05.387г. 3-й Эры</span>
+                    <span class="chronicle-author">Последняя запись</span>
+                </div>
+                <p>Над городом сгущается черно-красная дымка.</p>
+                <div class="chronicle-footnote">
+                    <span class="chronicle-seal">Разорванная печать</span>
+                    <button class="chronicle-more">Показать подробности</button>
+                </div>
+                <div class="chronicle-details">
+                    <p>Запасы почти исчерпаны. Вчера ночью видел, как трое стражников уводили кого-то в катакомбы под старой церковью. Они не вернулись. Утром на стенах появились те же символы, что и в найденном храме культа. Они кровоточат. Над городом висит странная дымка - иногда кажется, что в ней мелькают лица. Сестра Элиана говорит, что это начало конца. Я думаю, конец уже наступил.</p>
+                    <div class="chronicle-comment">
+                        <em>Запись обрывается на полуслове, последние слова залиты черными чернилами</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-end">
+            <div class="end-marker">
+                <span>❖</span>
+                <p>На этом записи обрываются</p>
+                <span>❖</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Хроники изолированного города</p>
+        <p>GitHub:</p>
+    </div>
+    <script src="../jscript/script.js"></script>
+</body>
+</html>
